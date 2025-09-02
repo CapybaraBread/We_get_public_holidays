@@ -20,5 +20,6 @@ def main():
     for holiday in holidays.get("response", {}).get("holidays", []):
         print(f"{holiday['name']} в {holiday['date']['iso']}")
         print(f"Описание: {holiday['description']}")
+        print("")
 if __name__ == "__main__":
     main()
